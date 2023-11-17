@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LR 4</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form action="#">
+      <table id="pizzaForm">
+        <!-- 1 -->
+        <tr>
+          <th colspan="2">Створи свою піцу</th>
+        </tr>
+        <!-- 2 -->
+        <tr>
+          <td><label for="розмір">Розмір піци:</label></td>
+          <td>
+            <input type="radio" id="стандарт" name="розмір" value="Стандарт" />
+            <label for="стандарт">Стандарт</label><br />
+
+            <input type="radio" id="велика" name="розмір" value="Велика" />
+            <label for="велика">Велика</label><br />
+
+            <input
+              type="radio"
+              id="екстравелика"
+              name="розмір"
+              value="Екстравелика"
+            />
+            <label for="екстравелика">Екстравелика</label><br />
+          </td>
+        </tr>
+        <!-- 3 -->
+        <tr>
+          <td><label for="соус">Соус для основи:</label></td>
+          <td>
+            <select id="соус">
+              <option value="Соус червоний">Соус червоний</option>
+              <option value="Соус білий">Соус білий</option>
+            </select>
+          </td>
+        </tr>
+        <!-- 4 -->
+        <tr>
+          <td><label for="інгредієнти">Інгредієнти:</label></td>
+          <td>
+            <input type="checkbox" id="сир" name="інгредієнти" value="Сир" />
+            <label for="сир">Сир</label><br />
+
+            <input
+              type="checkbox"
+              id="салямі"
+              name="інгредієнти"
+              value="Салямі"
+            />
+            <label for="салямі">Салямі</label><br />
+
+            <input
+              type="checkbox"
+              id="шинка"
+              name="інгредієнти"
+              value="Шинка"
+            />
+            <label for="шинка">Шинка</label><br />
+
+            <input
+              type="checkbox"
+              id="ковбаски"
+              name="інгредієнти"
+              value="Ковбаски"
+            />
+            <label for="ковбаски">Ковбаски</label><br />
+
+            <input
+              type="checkbox"
+              id="гриби"
+              name="інгредієнти"
+              value="Гриби"
+            />
+            <label for="гриби">Гриби</label><br />
+
+            <input
+              type="checkbox"
+              id="перець"
+              name="інгредієнти"
+              value="Перець"
+            />
+            <label for="перець">Перець</label><br />
+
+            <input
+              type="checkbox"
+              id="помідор"
+              name="інгредієнти"
+              value="Помідор"
+            />
+            <label for="помідор">Помідор</label><br />
+          </td>
+        </tr>
+        <!-- 5 -->
+        <tr>
+          <td><label for="побажання">Побажання:</label></td>
+          <td>
+            <textarea
+              name="побажання"
+              id="побажання"
+              cols="20"
+              rows="5"
+              placeholder="Пишіть тут"
+            ></textarea>
+          </td>
+        </tr>
+        <!-- 6 -->
+        <tr>
+          <td colspan="2" align="center">
+            <input type="reset" value="Скинути" />
+          </td>
+        </tr>
+        <!-- 1 -->
+        <tr>
+          <th colspan="2">Оформлення замовлення</th>
+        </tr>
+        <!-- 2 -->
+        <tr>
+          <td>
+            <label for="ім'я">Ім'я:</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="ім'я"
+              name="ім'я"
+              required
+              placeholder="Напишіть ваше ім'я тут"
+            />
+          </td>
+        </tr>
+        <!-- 3 -->
+        <tr>
+          <td><label for="телефон">Телефон:</label></td>
+          <td>
+            <input
+              type="tel"
+              id="телефон"
+              name="телефон"
+              pattern="+380[0-9]{9}"
+              required
+              placeholder="Введіть номер телефону"
+            />
+          </td>
+        </tr>
+        <!-- 4 -->
+        <tr>
+          <td><label for="пошта">Пошта:</label></td>
+          <td>
+            <input type="email" placeholder="Напишіть вашу пошту тут" />
+          </td>
+        </tr>
+        <!-- 5 -->
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Підтвердити замовлення" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <br />
+    <table id="pizzaTable">
+      <thead>
+        <tr>
+          <th>Розмір піци</th>
+          <th>Соус для основи</th>
+          <th>Інгредієнти</th>
+          <th>Побажання</th>
+          <th>Ім'я</th>
+          <th>Телефон</th>
+          <th>Пошта</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

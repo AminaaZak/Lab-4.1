@@ -1,0 +1,44 @@
+table {
+  background: linear-gradient(to bottom, #48e2e5, #ec77d6);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+}
+
+#pizzaForm {
+  border-radius: 5px;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #414141;
+}
+
+#pizzaTable {
+  border-collapse: collapse;
+}
